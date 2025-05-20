@@ -56,14 +56,17 @@ const CandidateForm = ({ onAddCandidate }) => {
 
   return (
     <form onSubmit={handleSubmit} className="form">
-      <input name="fullName" value={formData.fullName} onChange={handleChange} placeholder="Full Name" />
+      <input className='input-box' name="fullName" value={formData.fullName} onChange={handleChange} placeholder="Full Name" />
       {errors.fullName && <span>{errors.fullName}</span>}
+      <br />
 
-      <input name="email" value={formData.email} onChange={handleChange} placeholder="Email" />
+      <input className='input-box' name="email" value={formData.email} onChange={handleChange} placeholder="Email" />
       {errors.email && <span>{errors.email}</span>}
+      <br />
 
-      <input name="phone" value={formData.phone} onChange={handleChange} placeholder="Phone" />
+      <input className='input-box' name="phone" value={formData.phone} onChange={handleChange} placeholder="Phone" />
       {errors.phone && <span>{errors.phone}</span>}
+      <br />
 
       <div>
         Gender:

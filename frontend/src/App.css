@@ -15,3 +15,20 @@
   margin: 15px;
   padding: 15px;
 }
+
+.form .input-box{
+  padding: 6px;
+  margin: 5px;
+  width: 350px;
+  border: 2px dashed rgb(107, 216, 228);
+}
+
+.candidate{
+  border: 2px dashed blue;
+  display: flex;
+}
+.candidate-card{
+  border: 2px dashed black;
+  padding: 10px;
+
+}

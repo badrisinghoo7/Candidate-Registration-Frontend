@@ -25,14 +25,16 @@ const App = () => {
   };
 
   return (
-    <div className="app">
-      <div className='form'>
+    <>
 
+    <div className="app">
       <h1>Candidate Registration</h1>
       <CandidateForm onAddCandidate={handleAddCandidate} />
+    </div>
+      <div>
       <CandidateList candidates={candidates} onDelete={handleDelete} />
       </ div>
-    </div>
+    </>
   );
 };
 
