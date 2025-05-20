@@ -47,7 +47,7 @@ const CandidateForm = ({ onAddCandidate }) => {
     const reader = new FileReader();
     reader.onloadend = () => {
       onAddCandidate({ ...formData, picture: reader.result });
-      setFormData({ fullName: '', email: '', phone: '', gender: '', skills: [], picture: null });
+      setFormData({ fullName: '', email: '', phone: '', gender: '', skills: [], picture: "" });
       setPreview(null);
       setErrors({});
     };
@@ -97,7 +97,7 @@ const CandidateForm = ({ onAddCandidate }) => {
 
       {preview && <img src={preview} alt="Preview" width="100" />}
 
-      <button type="submit">Register</button>
+      <button className='submit-Button' type="submit">Register</button>
     </form>
   );
 };
