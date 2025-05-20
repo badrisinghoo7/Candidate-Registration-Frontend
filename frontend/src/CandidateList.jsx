@@ -4,7 +4,7 @@ import "./App.css"
 const CandidateList = ({ candidates, onDelete }) => {
   return (
     <div className="candidate-list">
-      <h2>Registered Candidates</h2>
+      <h2 className='register-candidate'>Registered Candidates</h2>
       <div className='candidate'>
 
       {candidates.map((c) => (
